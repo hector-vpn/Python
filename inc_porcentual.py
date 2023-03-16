@@ -10,7 +10,7 @@ worksheet = workbook['Table 1']
 incremento_porcentual = 0.10  # 10%
 
 # Itera sobre las celdas de la columna y aplica el incremento porcentual
-for cell in worksheet['B']:  # Cambia 'A' por la letra de la columna que deseas actualizar
+for cell in worksheet['B']:  # Cambia 'B' por la letra de la columna que deseas actualizar
     if isinstance(cell.value, (int, float)):
         cell.value *= (1 + incremento_porcentual)
 
